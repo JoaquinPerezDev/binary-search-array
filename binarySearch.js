@@ -53,4 +53,29 @@ if(target == potentialMatch) {
 }
 }
 
+//We can optimize the runtime further by implementing an iterative approach
+//instead of using recursion. Since we're just searching in place, it will
+//take no additional space, resulting in a O(1) constant space complexity.
+// function binarySearch(array, target) {
+
+//   return helper(array, target, 0, array.length - 1);
+//   }
+  
+//   function helper(array, target, left, right) {
+  
+  
+//   while(left <= right) {
+//     let middle = Math.floor((left + right)/2);
+//     let potentialMatch = array[middle];
+//       if(target == potentialMatch) {
+//         return middle;
+//       } else if(target < potentialMatch) {
+//         right = middle - 1;
+//       } else {
+//         left = middle + 1;
+//       }
+//   }
+//   return -1;
+//   }
+
 
